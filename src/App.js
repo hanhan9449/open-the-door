@@ -2,13 +2,6 @@ import "./App.css";
 import Door from "./Door/Door";
 import React, {useState} from "react";
 
-function getSize() {
-    return ({
-        width: window.innerWidth,
-        height: window.innerHeight
-    })
-
-}
 function App() {
     const [position, setPosition] = useState({top: 0, left: 0})
   return (
