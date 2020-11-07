@@ -1,0 +1,7 @@
+.door1 {
+    width: 300px;
+    user-select: none;
+}
+.relative {
+    position: relative;
+}
