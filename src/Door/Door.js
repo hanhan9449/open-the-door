@@ -5,21 +5,22 @@ import "./style.css";
 const Door = (props) => {
   const { position, setPosition } = props;
   return (
-    <img
-      src={door1}
-      className={"door1 relative"}
-      style={{ top: position.top + "px", left: position.left + "px" }}
-      onMouseMove={(e) => {
-        // console.log(e.clientX, e.clientY)
-        //   console.log(window.innerWidth, window.innerHeight)
-        setPosition({
-          top: Math.random()* 0.7 * window.innerHeight,
-          left: Math.random()* 0.7 * window.innerWidth,
-        });
-      }}
-      onClick={onClick}
-      alt={"door"}
-    />
+    <div className="door1 relative"
+         style={{ top: position.top + "px", left: position.left + "px" }}
+         onMouseMove={(e) => {
+           setPosition({
+             top: Math.random()  * window.innerHeight,
+             left: Math.random()  * window.innerWidth,
+           });
+         }}
+
+    >
+      <img
+        src={door1}
+        alt={"door"}
+        onClick={onClick}
+      />
+    </div>
   );
 };
 

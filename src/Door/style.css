@@ -1,6 +1,9 @@
 .door1 {
     width: 300px;
     user-select: none;
+    transform: translate(-50%, -50%);
+    /*transition: 0.1s ease;*/
+    padding: 30px;
 }
 .relative {
     position: relative;
