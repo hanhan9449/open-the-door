@@ -1,5 +1,4 @@
 import React from "react";
-import door1 from "./door1.png";
 import doorWrap from "./wrap.png";
 import doorLeft from "./left.png";
 import doorRight from "./right.png";
@@ -11,7 +10,7 @@ const Door = (props) => {
     <div
       className="wrap absolute"
       style={{ top: position.top + "px", left: position.left + "px" }}
-      onMouseMove={(e) => {
+      onMouseMove={() => {
         setPosition({
           top: Math.random() * window.innerHeight,
           left: Math.random() * window.innerWidth,
@@ -37,7 +36,7 @@ const Door = (props) => {
   );
 };
 
-function onClick(e) {
+function onClick() {
   console.log("我这个愚蠢的🚪被点中了");
 }
 
